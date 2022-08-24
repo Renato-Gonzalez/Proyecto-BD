@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="css/style.css">
+        
+        <title> Contactos </title>
+    </head>
+    <body>
+        <section>
+            <h2>Contacto</h2>
+            <!--Se agrega clase formulario al form-->
+            <form class="formulario">
+                <fieldset>
+                    <legend>Llene el formulario para contactarse</legend>
+                    <!--Se crea div con clase contenedor-campos-->
+                    <div class="contenedor-campos">
+                        <!--Se agrega clase campo a todos los text-->
+                        <div class="campo">
+                            <label>Nombre: </label>
+                            <input class="input-text" type="text" placeholder="Ej: John Doe"/>
+                        </div>
+
+                        <div class="campo">
+                            <label>Telefono: </label>
+                            <input class="input-text" type="tel" placeholder="Ej: 912341234">
+                        </div>
+
+                        <div class="campo">
+                            <label>Correo: </label>
+                            <input class="input-text" type="email" placeholder="Ej: correo@dominio.cl">
+                        </div>
+
+                        <div class="campo">
+                            <label>Mensaje: </label>
+                            <textarea class="input-text" cols="30" rows="10"></textarea>
+                        </div>
+                    </div>
+                    <!--Se agrega clase flex-end para posicionar el boton al final cuando la pantalla sea grande-->
+                    <div class="campo flex-end">
+                        <input class="boton" type="submit" value="Enviar"/>
+                    </div>
+
+                </fieldset>
+            </form>
+        </section>
+    </body>
+</html>

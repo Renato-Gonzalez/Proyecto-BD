@@ -1,0 +1,27 @@
+:root{
+    --Primario: hsl(56, 82%, 53%);
+    --Secundario: #000000;
+    --Tersario: #131f68;
+    --Cuartario: #74b8dd;
+    --blanco: #ffff;
+    --negro: #212121;
+    --gris: #5f5f5f;
+    --fog: #d7ddff;
+    --Quintario: #ffbe31;
+}
+
+.contenido-principal{ 
+    background-color: var(--blanco);
+    border-radius: 1rem;
+    padding: 2rem;
+    margin-top: 1rem;
+}
+
+.contenido-principal h1{ 
+    margin-bottom: 3rem; 
+    color: var(--negro); 
+    margin-top: 0;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 50px;
+
+}
