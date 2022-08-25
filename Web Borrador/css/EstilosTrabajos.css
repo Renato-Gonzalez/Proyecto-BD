@@ -19,9 +19,24 @@
 
 .contenido-principal h1{ 
     margin-bottom: 3rem; 
-    color: var(--negro); 
+    color: var(--blanco); 
     margin-top: 0;
     font-family:'Times New Roman', Times, serif;
     font-size: 50px;
 
+}
+
+.servicioss {
+    border-radius: 5px;
+    background-color: #74b8dd;
+    display: block;
+    padding: 5rem;
+}
+
+.servicioss:hover {
+    background-color: #73A3F5;
+}
+
+.servicioss:active {
+    background-color: #678BF6;
 }

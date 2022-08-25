@@ -1,6 +1,6 @@
 /****Custom Properties****/
 :root{
-    --Primario: hsl(56, 82%, 53%);
+    --Primario: #e9dc25;
     --Secundario: #000000;
     --Tersario: #313f9a;
     --Cuartario: #74b8dd;
@@ -8,7 +8,7 @@
     --negro: #212121;
     --gris: #5f5f5f;
     --fog: #d7ddff;
-    --Quintario: #ffbe31;
+    --Quintario: #F5BA1B;
 }
 
 /****Presets****/
@@ -58,11 +58,16 @@ header {
     color: var(--blanco);
     text-decoration: none;
     padding: 1.5rem;
-    border-radius: 1rem;
+    border-radius: 13px;
 }
+
 .Buton:hover {
     zoom: 105%;
     box-shadow: 3px 3px 3px #7f7f7f;
+}
+
+.Buton:active {
+    background-color: #73EAF5;
 }
 
 .Buton1 {
@@ -74,14 +79,17 @@ header {
     text-align: center;
     font-family: 'Roboto Mono', monospace;  
     font-weight: bold;
-    color: var(--blanco);
+    color: var(--negro);
     text-decoration: none;
 }
 
 .Buton1:hover {
     zoom: 105%;
     box-shadow: 5px 5px 5px #1e1751;
+}
 
+.Buton1:active {
+    background-color: #E4FF1C;
 }
 
 .Decoracion {
@@ -138,9 +146,17 @@ body {
 .field>button {
   padding:0.6em 0.8em;
   background-color:rgb(26, 188, 156);
-  color:white;
-  border:none;
+  color: white;
+  border: none;
   cursor: pointer;
+}
+
+.field>button:hover {
+  background-color: #13C5D4;
+}
+
+.field>input[type=text]:active {
+  border: 0.2em solid #13C5D4;
 }
 
 h1, h2, h3{
@@ -169,7 +185,7 @@ p{
 span{
     font-family: 'Roboto Mono', monospace;  
     font-size: 1.6rem;
-    color: var(--Cuartario);
+    color: var(--negro);
 }
 
 /****Utilidades****/
@@ -178,7 +194,7 @@ span{
 }
 
 .naranjo{
-    color: var(--Quintario);
+    color: var(--Tersario);
 }
 
 .contenedor{
@@ -258,7 +274,11 @@ span{
 }
 
 .navegacion-principal a:hover{
-    background-color: var(--Primario);
+    background-color: var(--Quintario);
+}
+
+.navegacion-principal a:active{
+    background-color: #DE910D;
 }
 /**<Navegacion principal/>*/
 
@@ -312,7 +332,7 @@ span{
     background-color: var(--Tersario);
     border-radius: 1rem;
     padding: 2rem;
-    margin-top: 1rem;    
+    margin-top: 1rem;   
 }
 
 .contenido-principal h2{ 
@@ -452,6 +472,7 @@ span{
 .pie{ /*footer*/
     text-align: center; /*--Se centra el texto*/
     margin: 2rem; /*--Se agrega margen en todas las direcciones*/
+    cursor: default;
 }
 /**<Footer/>**/
 
@@ -467,4 +488,3 @@ flex-direction: row;
 align-items: center;    --alineación horizontal en fila--
 justify-content: center;     --alineación vertical en fila--
 */
-
