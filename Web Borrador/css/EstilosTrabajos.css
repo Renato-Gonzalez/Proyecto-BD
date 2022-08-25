@@ -33,6 +33,12 @@
     padding: 5rem;
 }
 
+.a1:link, .a1:visited{
+    text-decoration: none;
+    color: white;
+    cursor: default;
+}
+
 .servicioss:hover {
     background-color: #73A3F5;
 }
